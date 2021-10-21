@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <!-- 声明这是一个HTML文件 -->
 <html lang="en">
+  <!-- HTML <head>元素,在这你可以插入脚本,样式文件,以及各种meta信息
+    可以添加在头部区域的元素标签为
+    <title></title>:(必须)定义了不同文档的标题,添加到收藏夹时,显示在收藏夹中的标题
+    <meta>:描述了一些基本的元数据,元数据不会显示在页面上,但是会被浏览器解析,可以用做和后端交互的数据接口
+    <style>:定义了HTML文档的样式信息 -->
   <head>
     <!-- 对于中文需要声明meta charset=“utf-8” 否则会出现乱码 -->
     <meta charset="UTF-8" />
+    <!-- 优先使用最新的ie版本 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 定义一级标题和二级标题的颜色 -->
+    <style type="text/css">
+      h1 {
+        color: red;
+      }
+      h2 {
+        color: green;
+      }
+    </style>
+    <!-- 定义了HTML页面标签的默认链接地址,实际使用时可以将所有的放在一个目录下 -->
+    <base href="E:\01 个人照片\" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HDM's first HTML</title>
   </head>
@@ -28,7 +45,7 @@
     <!-- src="img URL"图像的链接 alt="text"图像的代替文字（兜底） -->
     <img
       loading="lazy"
-      src="E:\01 个人照片\夜晚华师南门.jpg"
+      src="夜晚华师南门.jpg"
       alt="夜晚华师南门"
       width="250"
       height="200"
@@ -104,7 +121,7 @@
     <p>
       <a href="https://www.baidu.com" target="_parent">
         <img
-          src="E:\01 个人照片\夜晚华师南门.jpg"
+          src="夜晚华师南门.jpg"
           alt="夜晚华师南门"
           height="200"
           width="250"
