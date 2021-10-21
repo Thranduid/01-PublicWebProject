@@ -1,31 +1,57 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <!-- 声明这是一个HTML文件 -->
 <html lang="en">
-
-<head>
+  <!-- HTML <head>元素,在这你可以插入脚本,样式文件,以及各种meta信息
+    可以添加在头部区域的元素标签为
+    <title></title>:(必须)定义了不同文档的标题,添加到收藏夹时,显示在收藏夹中的标题
+    <meta>:描述了一些基本的元数据,元数据不会显示在页面上,但是会被浏览器解析,可以用做和后端交互的数据接口
+    <style>:定义了HTML文档的样式信息 -->
+  <head>
     <!-- 对于中文需要声明meta charset=“utf-8” 否则会出现乱码 -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <!-- 优先使用最新的ie版本 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 定义一级标题和二级标题的颜色 -->
+    <style type="text/css">
+      h1 {
+        color: red;
+      }
+      h2 {
+        color: green;
+      }
+    </style>
+    <!-- 定义了HTML页面标签的默认链接地址,实际使用时可以将所有的放在一个目录下 -->
+    <base href="E:\01 个人照片\" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HDM's first HTML</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- NO1. HTML 链接 -->
     <!-- HTML 链接是通过<a>来定义的 -->
     <!-- <a></a>定义一个超链接，可以用href属性来指示链接的对象 -->
-    <a href="https://github.com" target="_blank">这是一个链接使用了href属性，target属性定义为_blank，在新标签页打开</a>
+    <a href="https://github.com" target="_blank"
+      >这是一个链接使用了href属性，target属性定义为_blank，在新标签页打开</a
+    >
     <!-- br标签代表换行 -->
-    <br>
-    <a href="https://github.com" target="_parent">这是一个链接使用了href属性，target属性定义为_parent，在当前标签页打开</a>
-    <br>
-    <br>
+    <br />
+    <a href="https://github.com" target="_parent"
+      >这是一个链接使用了href属性，target属性定义为_parent，在当前标签页打开</a
+    >
+    <br />
+    <br />
 
     <!-- NO2. HTML图像 -->
     <!-- HTML 图像是通过<img>来定义的，这个标签有两个必须的属性，分别是src和alt -->
     <!-- src="img URL"图像的链接 alt="text"图像的代替文字（兜底） -->
-    <img loading="lazy" src="E:\01 个人照片\夜晚华师南门.jpg" alt="夜晚华师南门" width="250" height="200">
+    <img
+      loading="lazy"
+      src="夜晚华师南门.jpg"
+      alt="夜晚华师南门"
+      width="250"
+      height="200"
+    />
     <!-- HTML 背景图像是通过<body background="img url"></body>定义的 -->
-    <br>
+    <br />
 
     <!-- NO3. HTML 标题 -->
     <!-- HTML 标题是通过<h1>~<h6>来定义的 格式为<h1>text</h1> -->
@@ -38,16 +64,16 @@
 
     <!-- NO4. HTML 水平线 -->
     <!-- HTML 水平线是通过<hr>标签来定义的 格式与<br>一致 可用于分割内容 -->
-    <hr>
+    <hr />
     <h1>这是一个被分割线包围的标题</h1>
-    <hr>
-    <br>
+    <hr />
+    <br />
 
     <!-- NO5. HTML 段落 -->
     <!-- HTML 段落是通过<p>来定义的 可以将文档分割为若干段落，浏览器会自动在段落的前后添加空行 -->
     <!-- 如果要在不产生一个新段落的情况下进行换行，可以<p>text<br>text</p>这样使用 -->
-    <p>这是一个带换行符<br>的段落</p>
-    <br>
+    <p>这是一个带换行符<br />的段落</p>
+    <br />
 
     <!-- NO6. HTML 文本格式化 -->
     <!-- <b>加粗标签，通常标签被<strong>代替
@@ -62,12 +88,13 @@
     <cite></cite>：定义引用，可以使用该标签对参考文献引用进行定义
     更多可以参考https://www.w3school.com.cn/tags/tag_pre.asp -->
     <strong>这是一个语气更强的强调内容的文本</strong>
-    <br>
+    <br />
     <dfn>这是一个定义项目文本，斜体</dfn>
-    <br>
+    <br />
 
     <!-- NO7. HTML超链接优化 继承NO1 -->
     <!-- HTML -id属性：可用于创建一个HTML文档书签，书签不会在HTML页面中显示 -->
+<<<<<<< HEAD
     <a id="tips" href="https://www.baidu.com">有用的提示部分</a>
     <a href="#tips">访问有用的提示部分A</a>
     <a href="#tips">访问有用的提示部分B</a>
@@ -83,3 +110,41 @@
 >>>>>>> dev
 </body>
 </html>
+=======
+    <!-- 在当前页面链接到指定位置 注意href=“#idname” id=“idname” -->
+    <p>
+      <a href="#C4">查看章节4</a>
+    </p>
+
+    <h2>章节1</h2>
+    <p>显示章节1的内容</p>
+    <br />
+
+    <h2>章节2</h2>
+    <p>显示章节2的内容</p>
+    <br />
+
+    <h2>章节3</h2>
+    <p>显示章节3的内容</p>
+    <br />
+
+    <h2>
+      <a id="C4">章节4</a>
+    </h2>
+    <p>显示章节4的内容</p>
+    <br />
+    <!-- 图片链接 -->
+    <!-- 将img标签作为链接标签的text内容-->
+    <p>
+      <a href="https://www.baidu.com" target="_parent">
+        <img
+          src="夜晚华师南门.jpg"
+          alt="夜晚华师南门"
+          height="200"
+          width="250"
+        />
+      </a>
+    </p>
+  </body>
+</html>
+>>>>>>> dev
