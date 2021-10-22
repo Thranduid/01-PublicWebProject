@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HDM TEST FILE</title>
+    <!-- 通过内部样式表的形式修改控件的样式 -->
     <style type="text/css">
       body {
         background-color: rgb(215, 240, 211);
@@ -14,11 +15,22 @@
         height: 1px;
         border: none;
       }
+      a {
+        text-decoration: none;
+      }
+      h1 {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: sandybrown;
+      }
     </style>
   </head>
   <body>
     <hr />
     <p>当单个文件需要特殊样式表的时候,就可以通过在head的style标签进行定义</p>
     <hr />
+    <a href="https://www.baidu.com">不带下划线的超链接</a>
+    <hr />
+    <h1>居中且使用内部样式表的1级标题</h1>
   </body>
 </html>
